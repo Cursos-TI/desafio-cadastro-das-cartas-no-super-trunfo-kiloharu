@@ -121,67 +121,81 @@ int main() {
     //Comparações para definir o vencedor. As variáveis carta1 e carta 2 são os placares, de acordo com cada vitória
     //Comparação POPULAÇÃO
     if (populacao1>populacao2) {
-        printf("Carta %c%d venceu o confronto entre POPULAÇÕES.\n", codEstado1, codCidade1);
+        printf("Carta %c%d venceu o confronto entre POPULAÇÕES.", codEstado1, codCidade1);
         carta1++;
+        printf("             Placar: %c%d  %d x %d  %c%d.\n", codEstado1, codCidade1, carta1, carta2, codEstado2, codCidade2);
     }else {
-        printf("Carta %c%d venceu o confronto entre POPULAÇÕES.\n", codEstado2, codCidade2);
+        printf("Carta %c%d venceu o confronto entre POPULAÇÕES.", codEstado2, codCidade2);
         carta2++;
+        printf("             Placar: %c%d  %d x %d  %c%d.\n", codEstado1, codCidade1, carta1, carta2, codEstado2, codCidade2);
     }
 
     //Comparação ÁREA
     if (area1>area2) {
-        printf("Carta %c%d venceu o confronto entre suas ÁREAS.\n", codEstado1, codCidade1);
+        printf("Carta %c%d venceu o confronto entre suas ÁREAS.", codEstado1, codCidade1);
         carta1++;
+        printf("             Placar: %c%d  %d x %d  %c%d.\n", codEstado1, codCidade1, carta1, carta2, codEstado2, codCidade2);
     }else {
-        printf("Carta %c%d venceu o confronto entre suas ÁREAS.\n", codEstado2, codCidade2);
+        printf("Carta %c%d venceu o confronto entre suas ÁREAS.", codEstado2, codCidade2);
         carta2++;
+        printf("             Placar: %c%d  %d x %d  %c%d.\n", codEstado1, codCidade1, carta1, carta2, codEstado2, codCidade2);
     }
 
     //Comparação PIB
     if (pib1>pib2) {
-        printf("Carta %c%d venceu o confronto entre o valor do seu PIB.\n", codEstado1, codCidade1);
+        printf("Carta %c%d venceu o confronto entre o valor do seu PIB.", codEstado1, codCidade1);
         carta1++;
+        printf("             Placar: %c%d  %d x %d  %c%d.\n", codEstado1, codCidade1, carta1, carta2, codEstado2, codCidade2);
     }else {
-        printf("Carta %c%d venceu o confronto entre o valor do seu PIB.\n", codEstado2, codCidade2);
+        printf("Carta %c%d venceu o confronto entre o valor do seu PIB.", codEstado2, codCidade2);
         carta2++;
+        printf("             Placar: %c%d  %d x %d  %c%d.\n", codEstado1, codCidade1, carta1, carta2, codEstado2, codCidade2);
     }
 
     //Comparação NÚMERO DE PONTOS TURÍSTICOS
     if (numpontoturistico1>numpontoturistico2) {
-        printf("Carta %c%d venceu o confronto entre a Quantidade de PONTOS TURÍSTICOS.\n", codEstado1, codCidade1);
+        printf("Carta %c%d venceu o confronto entre a Quantidade de PONTOS TURÍSTICOS.", codEstado1, codCidade1);
         carta1++;
+        printf("             Placar: %c%d  %d x %d  %c%d.\n", codEstado1, codCidade1, carta1, carta2, codEstado2, codCidade2);
     }else {
-        printf("Carta %c%d venceu o confronto entre a Quantidade de PONTOS TURÍSTICOS.\n", codEstado2, codCidade2);
+        printf("Carta %c%d venceu o confronto entre a Quantidade de PONTOS TURÍSTICOS.", codEstado2, codCidade2);
         carta2++;
+        printf("             Placar: %c%d  %d x %d  %c%d.\n", codEstado1, codCidade1, carta1, carta2, codEstado2, codCidade2);
     }
 
     //Comparação DENSIDADE POPULACIONAL
     if (populacao1<populacao2) {
-        printf("Carta %c%d venceu o confronto entre DENSIDADE POPULACIONAL.\n", codEstado1, codCidade1);
+        printf("Carta %c%d venceu o confronto entre DENSIDADE POPULACIONAL.", codEstado1, codCidade1);
         carta1++;
+        printf("             Placar: %c%d  %d x %d  %c%d.\n", codEstado1, codCidade1, carta1, carta2, codEstado2, codCidade2);
     }else {
-        printf("Carta %c%d venceu o confronto entre DENSIDADE POPULACIONAL.\n", codEstado2, codCidade2);
+        printf("Carta %c%d venceu o confronto entre DENSIDADE POPULACIONAL.", codEstado2, codCidade2);
         carta2++;
+        printf("             Placar: %c%d  %d x %d  %c%d.\n", codEstado1, codCidade1, carta1, carta2, codEstado2, codCidade2);
     }
 
     //Comparação PIB PER CAPTA
     if (pibpercapta1>pibpercapta2) {
-        printf("Carta %c%d venceu o confronto entre PIB PER CAPTA.\n", codEstado1, codCidade1);
+        printf("Carta %c%d venceu o confronto entre PIB PER CAPTA.", codEstado1, codCidade1);
         carta1++;
+        printf("             Placar: %c%d  %d x %d  %c%d.\n", codEstado1, codCidade1, carta1, carta2, codEstado2, codCidade2);
     }else {
-        printf("Carta %c%d venceu o confronto entre PIB PER CAPTA.\n", codEstado2, codCidade2);
+        printf("Carta %c%d venceu o confronto entre PIB PER CAPTA.", codEstado2, codCidade2);
         carta2++;
+        printf("             Placar: %c%d  %d x %d  %c%d.\n", codEstado1, codCidade1, carta1, carta2, codEstado2, codCidade2);
     }
 
-    printf("\n\nPor enquanto o PLACAR GERAL é carta %c%d %d x %d %c%d. Vamos para o último embate!", codEstado1, codCidade1, carta1, carta2, codEstado2, codCidade2);
+    printf("\n\nPor enquanto o PLACAR GERAL é %c%d %d x %d %c%d. Vamos para o último embate!\n\n", codEstado1, codCidade1, carta1, carta2, codEstado2, codCidade2);
 
     //Comparação SUPER PODER
     if (superpoder1>superpoder2) {
-        printf("Pela união de seus poderes, a carta %c%d venceu o confronto entre seus SUPER PODERES.\n", codEstado1, codCidade1);
+        printf("Pela união de seus poderes, a carta %c%d venceu o confronto entre seus SUPER PODERES.", codEstado1, codCidade1);
         carta1++;
+        printf("             Placar: %c%d  %d x %d  %c%d.\n", codEstado1, codCidade1, carta1, carta2, codEstado2, codCidade2);
     }else {
-        printf("Pela união de seus poderes, a carta %c%d venceu o confronto entre seus SUPER PODERES.\n", codEstado2, codCidade2);
+        printf("Pela união de seus poderes, a carta %c%d venceu o confronto entre seus SUPER PODERES.", codEstado2, codCidade2);
         carta2++;
+        printf("             Placar: %c%d  %d x %d  %c%d.\n", codEstado1, codCidade1, carta1, carta2, codEstado2, codCidade2);
     }
     
     //Comparação final, declarando o vencedor geral.
