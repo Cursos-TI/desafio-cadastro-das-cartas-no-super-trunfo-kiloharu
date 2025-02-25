@@ -1,4 +1,6 @@
 #include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
 
 // Desafio Super Trunfo - Países
 // Tema 1 - Cadastro das Cartas
@@ -8,7 +10,16 @@
 int main() {
     // Sugestão: Defina variáveis separadas para cada atributo da cidade.
     // Exemplos de atributos: código da cidade, nome, população, área, PIB, número de pontos turísticos.
-    
+ /*
+    int populacao;
+    int pib;
+    int area;
+    int densidade;
+    int turismo;
+    int superpoder;
+    int pibpercapta;
+*/
+    int NumeroCaso;
     char codEstado1;
     int carta1 = 0;
     int carta2 = 0;
@@ -85,7 +96,7 @@ int main() {
     // Exiba os valores inseridos para cada atributo da cidade, um por linha.
 
 
-    printf("\n\nCarta Cadastrada com Sucesso!\n\n\n");
+    printf("\n\nCartas Cadastradas com Sucesso!\n\n\n");
 
     //Exibição dos itens da primeira carta
     printf("Estado: %c.\n", codEstado1);
@@ -119,27 +130,60 @@ int main() {
 
 
     //Comparações para definir o vencedor. As variáveis carta1 e carta 2 são os placares, de acordo com cada vitória
-    //Comparação POPULAÇÃO
-    if (populacao1>populacao2) {
+    NumeroCaso = 1 + ( rand() % 10 );
+
+    switch (NumeroCaso)
+    {
+        case 1 :
+        //Comparação POPULAÇÃO
+        if (populacao1>populacao2) {
         printf("Carta %c%d venceu o confronto entre POPULAÇÕES.", codEstado1, codCidade1);
         carta1++;
         printf("             Placar: %c%d  %d x %d  %c%d.\n", codEstado1, codCidade1, carta1, carta2, codEstado2, codCidade2);
-    }else {
+        }else {
         printf("Carta %c%d venceu o confronto entre POPULAÇÕES.", codEstado2, codCidade2);
         carta2++;
         printf("             Placar: %c%d  %d x %d  %c%d.\n", codEstado1, codCidade1, carta1, carta2, codEstado2, codCidade2);
-    }
+        }
+        break;
 
-    //Comparação ÁREA
-    if (area1>area2) {
+        case 2:
+        //Comparação ÁREA
+        if (area1>area2) {
         printf("Carta %c%d venceu o confronto entre suas ÁREAS.", codEstado1, codCidade1);
         carta1++;
         printf("             Placar: %c%d  %d x %d  %c%d.\n", codEstado1, codCidade1, carta1, carta2, codEstado2, codCidade2);
-    }else {
+        }else {
         printf("Carta %c%d venceu o confronto entre suas ÁREAS.", codEstado2, codCidade2);
         carta2++;
         printf("             Placar: %c%d  %d x %d  %c%d.\n", codEstado1, codCidade1, carta1, carta2, codEstado2, codCidade2);
+        }
+        break;
+
+        case 3:
+
+        break;
+
+        case 4:
+
+        break;
+
+        case 5:
+
+        break;
+
+        case 6:
+
+        break;
+
+        case 7:
+
+        break;
     }
+
+
+
+   
 
     //Comparação PIB
     if (pib1>pib2) {
