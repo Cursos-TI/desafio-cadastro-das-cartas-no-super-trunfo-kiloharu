@@ -161,93 +161,72 @@ int main() {
         break;
 
         case 3:
-
-        break;
-
-        case 4:
-
-        break;
-
-        case 5:
-
-        break;
-
-        case 6:
-
-        break;
-
-        case 7:
-
-        break;
-    }
-
-
-
-   
-
-    //Comparação PIB
-    if (pib1>pib2) {
+            //Comparação PIB
+        if (pib1>pib2) {
         printf("Carta %c%d venceu o confronto entre o valor do seu PIB.", codEstado1, codCidade1);
         carta1++;
         printf("             Placar: %c%d  %d x %d  %c%d.\n", codEstado1, codCidade1, carta1, carta2, codEstado2, codCidade2);
-    }else {
+        }else {
         printf("Carta %c%d venceu o confronto entre o valor do seu PIB.", codEstado2, codCidade2);
         carta2++;
         printf("             Placar: %c%d  %d x %d  %c%d.\n", codEstado1, codCidade1, carta1, carta2, codEstado2, codCidade2);
-    }
+        }
+        break;
 
-    //Comparação NÚMERO DE PONTOS TURÍSTICOS
-    if (numpontoturistico1>numpontoturistico2) {
+        case 4:
+        //Comparação NÚMERO DE PONTOS TURÍSTICOS
+        if (numpontoturistico1>numpontoturistico2) {
         printf("Carta %c%d venceu o confronto entre a Quantidade de PONTOS TURÍSTICOS.", codEstado1, codCidade1);
         carta1++;
         printf("             Placar: %c%d  %d x %d  %c%d.\n", codEstado1, codCidade1, carta1, carta2, codEstado2, codCidade2);
-    }else {
+        }else {
         printf("Carta %c%d venceu o confronto entre a Quantidade de PONTOS TURÍSTICOS.", codEstado2, codCidade2);
         carta2++;
         printf("             Placar: %c%d  %d x %d  %c%d.\n", codEstado1, codCidade1, carta1, carta2, codEstado2, codCidade2);
-    }
+        }
+        break;
 
-    //Comparação DENSIDADE POPULACIONAL
-    if (populacao1<populacao2) {
+        case 5:
+        //Comparação DENSIDADE POPULACIONAL
+        if (populacao1<populacao2) {
         printf("Carta %c%d venceu o confronto entre DENSIDADE POPULACIONAL.", codEstado1, codCidade1);
         carta1++;
         printf("             Placar: %c%d  %d x %d  %c%d.\n", codEstado1, codCidade1, carta1, carta2, codEstado2, codCidade2);
-    }else {
+        }else {
         printf("Carta %c%d venceu o confronto entre DENSIDADE POPULACIONAL.", codEstado2, codCidade2);
         carta2++;
         printf("             Placar: %c%d  %d x %d  %c%d.\n", codEstado1, codCidade1, carta1, carta2, codEstado2, codCidade2);
-    }
+        }
+        break;
 
-    //Comparação PIB PER CAPTA
-    if (pibpercapta1>pibpercapta2) {
+        case 6:
+        //Comparação PIB PER CAPTA
+        if (pibpercapta1>pibpercapta2) {
         printf("Carta %c%d venceu o confronto entre PIB PER CAPTA.", codEstado1, codCidade1);
         carta1++;
         printf("             Placar: %c%d  %d x %d  %c%d.\n", codEstado1, codCidade1, carta1, carta2, codEstado2, codCidade2);
-    }else {
+        }else {
         printf("Carta %c%d venceu o confronto entre PIB PER CAPTA.", codEstado2, codCidade2);
         carta2++;
         printf("             Placar: %c%d  %d x %d  %c%d.\n", codEstado1, codCidade1, carta1, carta2, codEstado2, codCidade2);
-    }
+        }
+        break;
 
-    printf("\n\nPor enquanto o PLACAR GERAL é %c%d %d x %d %c%d. Vamos para o último embate!\n\n", codEstado1, codCidade1, carta1, carta2, codEstado2, codCidade2);
-
-    //Comparação SUPER PODER
-    if (superpoder1>superpoder2) {
+        case 7:
+        //Comparação SUPER PODER
+        if (superpoder1>superpoder2) {
         printf("Pela união de seus poderes, a carta %c%d venceu o confronto entre seus SUPER PODERES.", codEstado1, codCidade1);
         carta1++;
         printf("             Placar: %c%d  %d x %d  %c%d.\n", codEstado1, codCidade1, carta1, carta2, codEstado2, codCidade2);
-    }else {
+        }else {
         printf("Pela união de seus poderes, a carta %c%d venceu o confronto entre seus SUPER PODERES.", codEstado2, codCidade2);
         carta2++;
         printf("             Placar: %c%d  %d x %d  %c%d.\n", codEstado1, codCidade1, carta1, carta2, codEstado2, codCidade2);
-    }
-    
-    //Comparação final, declarando o vencedor geral.
-    if (carta1>carta2) {
-        printf("E O VENCEDOR DO EMBATE É A CARTA %c%d, COM UM PLACAR DE %c%d %d x %d %c%d. PARABÉNS PARA O POVO DE %s.\n", codEstado1, codCidade1, codEstado1, codCidade1, carta1, carta2, codEstado2, codCidade2, nomeCidade1);
-    }else {
-        printf("E O VENCEDOR DO EMBATE É A CARTA %c%d, COM UM PLACAR DE %c%d %d x %d %c%d. PARABÉNS PARA O POVO DE %s.\n", codEstado2, codCidade2, codEstado1, codCidade1, carta1, carta2, codEstado2, codCidade2, nomeCidade2);
+        }
+        break;
     }
 
-        return 0;
+    //printf("\n\nPor enquanto o PLACAR GERAL é %c%d %d x %d %c%d. Vamos para o último embate!\n\n", codEstado1, codCidade1, carta1, carta2, codEstado2, codCidade2);
+
+    return 0;
 }
